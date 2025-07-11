@@ -19,19 +19,19 @@
         <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#hero" class="nav-link">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Project</a>
+                    <a href="#project" class="nav-link">Project</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#footer" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -55,9 +55,9 @@
                                 <button class="resume-btn">Resume
                                     <span class="arrow">→</span>
                                 </button>
-                                <button class="resume-btn">Hire Me
+                                <a href="#footer"><button class="resume-btn">Hire Me
                                     <span class="arrow">→</span>
-                                </button>
+                                </button></a>
                             </div>
                         </div>
                     </div>
@@ -66,32 +66,33 @@
         </div>
     </section>
 
-    <section class="about">
-        <div class="about-cont">
+    <section id="about">
+        <div>
+            <h1 class="title">About Me <span class="dot">.</span></h1>
             <div class="container">
-                <h1 class="title">About Me <span class="dot">.</span></h1>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="img/Union.png" alt="About Image" class="about-img">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="about-text">
-                            I'm a meticulous UX/UI designer focused on creating user-centered experiences that blend
-                            functionality and aesthetics. By leveraging extensive research, I inform my design
-                            strategies to
-                            ensure intuitive and engaging interfaces. My process includes wireframing, prototyping, and
-                            iterative user testing, all aimed at delivering visually compelling and highly usable
-                            solutions.
-                            I'm
-                            dedicated to enhancing usability and creating transformative digital experiences that
-                            resonate
-                            with
-                            users.
-                        </p>
+                <div class="about-cont">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/Union.png" alt="About Image" class="about-img">
+                        </div>
+                        <div class="col-md-8">
+                            <p class="about-text">
+                                I'm a meticulous UX/UI designer focused on creating user-centered experiences that blend
+                                functionality and aesthetics. By leveraging extensive research, I inform my design
+                                strategies to
+                                ensure intuitive and engaging interfaces. My process includes wireframing, prototyping,
+                                and
+                                iterative user testing, all aimed at delivering visually compelling and highly usable
+                                solutions.
+                                I'm
+                                dedicated to enhancing usability and creating transformative digital experiences that
+                                resonate
+                                with
+                                users.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
 
     <section id="what-i">
@@ -114,52 +115,69 @@
 
     </section>
 
+
     <section id="project">
         <div class="container">
             <h1 class="title">Projects <span class="dot">.</span></h1>
             <p class="subhead">
                 Transforming Ideas into Interactive Journeys
             </p>
-
-            <div class="parent">
-                <div class="div1">1</div>
-                <div class="div2">2</div>
-                <div class="div3">3</div>
-                <div class="div4">4</div>
-                <div class="div5">5</div>
-                <div class="div6">6</div>
+            <div class="slider">
+                <div class="slide active" style="background-image: url('img1.jpg');">
+                    <div class="number">1</div>
+                    <div class="content">
+                        <h3>Discover</h3>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img2.jpg');">
+                    <div class="number">2</div>
+                    <div class="content">
+                        <h3>Discover</h3>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img3.jpg');">
+                    <div class="number">3</div>
+                    <div class="content">
+                        <h3>Discover</h3>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="slide content-slide" style="background-image: url('img4.jpg');">
+                    <div class="number">4</div>
+                    <div class="content">
+                        <h3>Discover</h3>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-in">NEW TECHNOLOGIES</h3>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
-
-    <section id="tools-section">
-        <div class="container">
-            <div class="content">
-                <h2 class="title">Tools <span class="dot">.</span></h2>
-                <p class="subhead">
-                    We put your ideas and thus your wishes in the form of a unique web project<br>
-                    that inspires you and your customers.
-                </p>
-            </div>
-
-            <div class="tools-grid">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    alt="JavaScript" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                    alt="Bootstrap" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg"
-                    alt="Photoshop" />
+    <section id="tool">
+        <div class="cotainer">
+            <h1 class="title">Tools <span class="dot">.</span></h1>
+            <p class="subhead">
+                Transforming Ideas into Interactive Journeys
+            </p>
+            <div class="tools">
+                <img src="img/" alt="image">
+                <img src="img/Html.png" alt="image">
+                <img src="img/Official_CSS_Logo 1.png" alt="image">
+                <img src="img/Bootstrap.png" alt="image">
+                <img src="img/Js.png" alt="image">
+                <img src="img/Photoshop.png" alt="image">
             </div>
         </div>
     </section>
+
     <section id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <h2 class="title">Contact<span class="dot">.</span></h2>
                     <p class="subhead-cnt">
                         Got a project in mind? <br>
@@ -167,11 +185,22 @@
                     </p>
                     <nav class="nav-bar">
                         <div class="menu">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Contact</a>
+                            <a href="">Home</a>
+                            <a href="">About</a>
+                            <a href="">Contact</a>
                         </div>
                     </nav>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-container">
+                        <h2>Leave a message</h2>
+                        <form>
+                            <input type="text" placeholder="Full Name" required />
+                            <input type="email" placeholder="Email" required />
+                            <input type="text" placeholder="Contact" required />
+                            <textarea placeholder="Message" rows="5" required></textarea>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
