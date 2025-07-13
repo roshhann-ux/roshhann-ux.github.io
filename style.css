@@ -18,6 +18,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 button {
     cursor: pointer;
     border: none;
@@ -87,6 +88,13 @@ header {
 
 .navbar .nav-menu .nav-link:hover::after {
     width: 100%;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 /* .navbar */
@@ -219,7 +227,7 @@ header {
 .text {
     font-weight: bolder;
     font-size: 80px;
-    color: #623ffc;
+    color: #3fd0fc;
     position: absolute;
     opacity: 0;
     transform: translateY(100%);
@@ -266,11 +274,12 @@ header {
 
 #about {
     height: 100vh;
-    padding: 80px 15px;
+    display: flex;
     background-color: #f5e9dc;
     height: 100vh;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .title {
@@ -607,77 +616,87 @@ header {
 }
 
 .form-container {
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 0 20px;
-  font-family: Arial, sans-serif;
-  color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
 .form-container h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 form input,
 form textarea {
-  width: 100%;
-  padding: 16px;
-  margin-bottom: 16px;
-  background-color: #555;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  color: white;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #555;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    color: white;
 }
 
 form input::placeholder,
 form textarea::placeholder {
-  color: #ccc;
+    color: #ccc;
 }
 
 
 
 @media (max-width: 768px) {
-  .main-title {
-    font-size: 2rem;
-  }
+    .navbar {
+        display: none;
+    }
 
-  .text-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
+    .main-title {
+        font-size: 8rem;
+    }
 
-  .text {
-    font-size: 1rem;
-  }
+    .text-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .resume-btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
+    .text {
+        font-size: 5rem;
+    }
+
+    .resume-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .name {
+        font-size: 2rem;
+        margin-bottom: 10px
+    }
 }
 
 @media (max-width: 480px) {
-  .main-title {
-    font-size: 1.5rem;
-  }
+    .main-title {
+        font-size: 6rem;
+    }
 
-  .name {
-    font-size: 1rem;
-  }
+    .name {
+        font-size: 1.5rem;
+    }
 
-  .text {
-    font-size: 0.9rem;
-  }
+    .text {
+        font-size: 0.9rem;
+    }
 
-  .resume-btn {
-    width: 100%;
-    padding: 12px 0;
-  }
+    .resume-btn {
+        width: 100%;
+        padding: 12px 20px;
 
-  .buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
+    }
+
+    .buttons {
+        flex-direction:column;
+        gap: 10px;
+    }
 }
