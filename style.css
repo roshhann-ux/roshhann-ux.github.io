@@ -273,7 +273,6 @@ header {
 
 
 #about {
-    height: 100vh;
     display: flex;
     background-color: #f5e9dc;
     height: 100vh;
@@ -321,7 +320,6 @@ header {
 
 
 #what-i {
-    height: 70vh;
     background-color: #f5e9dc;
     display: flex;
     justify-content: center;
@@ -382,7 +380,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 #project .container {

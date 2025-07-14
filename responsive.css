@@ -32,6 +32,7 @@
 
     .about-text{
         font-size: 0.9rem;
+        width:fit-content;
         
     }
 }
