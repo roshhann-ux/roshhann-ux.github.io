@@ -275,7 +275,6 @@ header {
 #about {
     display: flex;
     background-color: #f5e9dc;
-    height: 100vh;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -376,7 +375,6 @@ header {
 
 #project {
     background-color: #f5e9dc;
-    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -566,7 +564,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
 }
 
 .tools {
