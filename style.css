@@ -100,8 +100,11 @@ header {
 /* .navbar */
 
 
+
+/* hero  */
+
 #hero {
-    background: url(img/pexels-tirachard-kumtanom-112571-450055.jpg);
+    /* background: url(img/pexels-tirachard-kumtanom-112571-450055.jpg); */
     background-color: #000;
     height: 100vh;
     background-repeat: no-repeat;
@@ -109,10 +112,37 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    z-index: 1;
+    position: sticky;
+}
+
+.hero-cntnt {
+  text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .hero-section {
     text-align: center;
+}
+
+.hero-cntnt.splash {
+  animation: splashOut 1s forwards;
+}
+
+@keyframes splashOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2) rotate(20deg) translateY(-50px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2) rotate(90deg) translateY(-200px);
+  }
 }
 
 .name {
@@ -126,10 +156,23 @@ header {
 
 .main-title {
     color: white;
-    font-size: 250px;
+    font-size: 150px;
     font-weight: 900;
     margin-bottom: 10px;
     font-family: "outfit";
+}
+.main-title span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: riseUp 0.6s forwards;
+}
+
+@keyframes riseUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .subtitle {
@@ -142,9 +185,9 @@ header {
 /* button hover */
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     gap: 20px;
-    padding-top: 15px;
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -197,7 +240,7 @@ header {
 
 /* button hover  */
 
-
+/* hero */
 
 .box {
     width: 100%;
@@ -280,6 +323,8 @@ header {
     justify-content: center;
     align-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .title {
@@ -607,6 +652,3 @@ form input::placeholder,
 form textarea::placeholder {
     color: #ccc;
 }
-
-
-

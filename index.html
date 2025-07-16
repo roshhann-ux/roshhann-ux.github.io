@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Tilt+Warp&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="responsive.css">
 </head>
 
@@ -38,20 +39,14 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <div class="hero">
                 <div class="row">
-                    <div class="hero-cntnt">
+                    <div class="hero-cntnt" id="heroContent">
                         <div class="hero-section">
+                            <h1 class="main-title" id="animated-title">Ui/Ux Designer</h1>
                             <p class="name">Afthab Roshan</p>
-                            <h1 class="main-title">UI/UX</h1>
-                            <div class="box">
-                                <div class="text-wrapper">
-                                    <div class="text">Devoloper</div>
-                                    <div class="text">Designer</div>
-                                </div>
-                            </div>
 
                             <div class="buttons">
                                 <button class="resume-btn">Resume
@@ -67,26 +62,34 @@
             </div>
         </div>
     </section>
-<section id="about" class="py-5">
-    <div class="container">
-        <h1 class="title text-center mb-4">About Me <span class="dot">.</span></h1>
-        <div class="row align-items-center">
-            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-                <img src="img/Union.png" alt="About Image" class="img-fluid about-img">
-            </div>
-            <div class="col-12 col-md-8">
-                <p class="about-text">
-                    I'm a meticulous UX/UI designer focused on creating user-centered experiences that blend
-                    functionality and aesthetics. By leveraging extensive research, I inform my design strategies to
-                    ensure intuitive and engaging interfaces. My process includes wireframing, prototyping, and
-                    iterative user testing, all aimed at delivering visually compelling and highly usable solutions.
-                    I'm dedicated to enhancing usability and creating transformative digital experiences that resonate
-                    with users.
-                </p>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h1 class="title text-center mb-4">About Me <span class="dot">.</span></h1>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                    <div data-aos="fade-right"> <img src="img/Union.png" alt="About Image" class="img-fluid about-img">
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div data-aos="fade-left">
+                        <p class="about-text">
+                            I'm a meticulous UX/UI designer focused on creating user-centered experiences that blend
+                            functionality and aesthetics. By leveraging extensive research, I inform my design
+                            strategies to
+                            ensure intuitive and engaging interfaces. My process includes wireframing, prototyping, and
+                            iterative user testing, all aimed at delivering visually compelling and highly usable
+                            solutions.
+                            I'm dedicated to enhancing usability and creating transformative digital experiences that
+                            resonate
+                            with users.
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <section id="what-i">
         <div class="container">
             <h1 class="title">What I do <span class="dot">.</span></h1>
@@ -94,16 +97,15 @@
                 Transforming Ideas into Interactive Journeys
             </p>
             <div class="tag-container">
-                <div class="tag">Web Design</div>
-                <div class="tag">App Design</div>
-                <div class="tag">Graphic Design</div>
-                <div class="tag">Logo Design</div>
-                <div class="tag">Icons</div>
-                <div class="tag">Wireframe</div>
-                <div class="tag">Front-end-developer</div>
-                <div class="tag">User Research</div>
+                <div class="tag" data-aos="fade-down" data-aos-delay="100">Web Design</div>
+                <div class="tag" data-aos="fade-down" data-aos-delay="200">App Design</div>
+                <div class="tag" data-aos="fade-down" data-aos-delay="300">Graphic Design</div>
+                <div class="tag" data-aos="fade-down" data-aos-delay="400">Logo Design</div>
+                <div class="tag" data-aos="fade-down" data-aos-delay="500">Icons</div>
+                <div class="tag" data-aos="fade-down" data-aos-delay="600">Wireframe</div>
+                <div class="tag" data-aos="fade-down" data-aos-delay="700">Front-end-developer</div>
+                <div class="tag" data-aos="fade-down" data-aos-delay="800">User Research</div>
             </div>
-        </div>
 
     </section>
 
@@ -210,7 +212,17 @@
     <section class="last">
         <div class="copy"></div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true // animation happens only once
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
