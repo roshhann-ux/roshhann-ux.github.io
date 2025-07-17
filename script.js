@@ -5,7 +5,7 @@ title.textContent = "";
 [...text].forEach((char, i) => {
     const span = document.createElement("span");
     span.textContent = char;
-    span.style.animationDelay = `${i * 0.1}s`; // Delay between letters
+    span.style.animationDelay = `${i * 0.2}s`; // Delay between letters
     title.appendChild(span);
 });
 
