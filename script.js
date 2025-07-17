@@ -23,12 +23,17 @@ const observer = new IntersectionObserver(
     { threshold: 0.3 } // Trigger when 30% is out of view
 );
 //    menubutton 
-observer.observe(hero);
-
   const toggleBtn = document.getElementById('menu-toggle');
   const sideMenu = document.getElementById('side-menu');
 
   toggleBtn.addEventListener('click', () => {
     sideMenu.classList.toggle('active');
+  });
+
+  // Optional: Close menu when link is clicked
+  document.querySelectorAll('#side-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      sideMenu.classList.remove('active');
+    });
   });
 //   menubutton
