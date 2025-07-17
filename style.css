@@ -162,19 +162,10 @@ header {
     font-weight: 900;
     margin-bottom: 10px;
     font-family: "outfit";
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+   
 }
 
-.title-line {
-  white-space: nowrap;
-}
 
-.title-top,
-.title-bottom {
-    white-space: nowrap;
-}
 
 .main-title span {
     display: inline-block;

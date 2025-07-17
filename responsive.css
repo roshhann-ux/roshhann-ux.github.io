@@ -19,6 +19,10 @@
         font-size: 5rem;
     }
 
+    .resume-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
 
     .name {
         font-size: 2rem;
@@ -50,9 +54,17 @@
         font-size: 3rem;
     }
 
+    .resume-btn {
+        width: 100%;
+        padding: 12px 20px;
 
+    }
 
- 
+    .buttons {
+        display: flex;
+        flex-direction:column;
+        gap: 10px;
+    }
 }
 @media (max-width: 768px) {
   .main-title {
