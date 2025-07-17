@@ -322,7 +322,6 @@ header {
 
 
 #about {
-    height: 100vh;
     display: flex;
     background-color: #f5e9dc;
     justify-content: center;

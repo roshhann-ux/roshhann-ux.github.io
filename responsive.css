@@ -4,11 +4,8 @@
     }
 
     .main-title {
-        font-size: 3rem;
+        font-size: 70px;
     }
-.designer{
-    font-size:2rem;
-}
 
     .text-wrapper {
         flex-direction: column;
@@ -29,22 +26,23 @@
         margin-bottom: 10px
     }
 
-    .title{
+    .title {
         font-size: 3rem;
     }
 
-    .about-text{
+    .about-text {
         font-size: 0.9rem;
-        width:fit-content;
+        width: fit-content;
         text-align: center;
-        
+
     }
 }
+
 @media (max-width: 480px) {
     .main-title {
         font-size: 50px;
     }
- 
+
 
     .name {
         font-size: 1.5rem;
@@ -62,34 +60,10 @@
 
     .buttons {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         gap: 10px;
     }
 }
-@media (max-width: 768px) {
-  .main-title {
-    flex-direction: column;
-    align-items: center; /* or flex-start */
-    font-size: 100px; /* adjust size for mobile */
-  }
-
-  .title-line {
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-title {
-    flex-direction: column;
-    align-items: center; /* or flex-start */
-    font-size: 90px; /* adjust size for mobile */
-  }
-
-  .title-line {
-    display: block;
-  }
-}
-
 
 
 
@@ -136,8 +110,9 @@
     }
 
 }
-@media (max-width: 480px){
-    .slider{
+
+@media (max-width: 480px) {
+    .slider {
         width: 100%;
         align-items: center;
         justify-content: center;
