@@ -118,8 +118,8 @@ header {
 }
 
 .hero-cntnt {
-  text-align: center;
-  transition: all 0.5s ease-in-out;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
 }
 
 .hero-section {
@@ -127,22 +127,24 @@ header {
 }
 
 .hero-cntnt.splash {
-  animation: splashOut 1s forwards;
+    animation: splashOut 1s forwards;
 }
 
 @keyframes splashOut {
-  0% {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(1.2) rotate(20deg) translateY(-50px);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2) rotate(90deg) translateY(-200px);
-  }
+    0% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(20deg) translateY(-50px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2) rotate(90deg) translateY(-200px);
+    }
 }
 
 .name {
@@ -160,7 +162,20 @@ header {
     font-weight: 900;
     margin-bottom: 10px;
     font-family: "outfit";
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
+
+.title-line {
+  white-space: nowrap;
+}
+
+.title-top,
+.title-bottom {
+    white-space: nowrap;
+}
+
 .main-title span {
     display: inline-block;
     opacity: 0;
@@ -185,7 +200,7 @@ header {
 /* button hover */
 .buttons {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 20px;
     padding-top: 100px;
     text-align: center;

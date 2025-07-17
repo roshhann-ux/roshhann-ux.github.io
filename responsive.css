@@ -19,10 +19,6 @@
         font-size: 5rem;
     }
 
-    .resume-btn {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-    }
 
     .name {
         font-size: 2rem;
@@ -43,10 +39,6 @@
 @media (max-width: 480px) {
     .main-title {
         font-size: 50px;
-        width: 375px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
     }
  
 
@@ -58,26 +50,34 @@
         font-size: 3rem;
     }
 
-    .resume-btn {
-        width: 40%;
-        padding: 12px 20px;
 
-    }
-    .resume-btn .arrow{
-        display:none;
-    }
-    .resume-btn:hover::before  {
-        display: none;
-    }
-    .resume-btn:hover{
-        display: none;
-    }
 
-    .buttons {
-        flex-direction:column;
-        gap: 10px;
-    }
+ 
 }
+@media (max-width: 768px) {
+  .main-title {
+    flex-direction: column;
+    align-items: center; /* or flex-start */
+    font-size: 100px; /* adjust size for mobile */
+  }
+
+  .title-line {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    flex-direction: column;
+    align-items: center; /* or flex-start */
+    font-size: 90px; /* adjust size for mobile */
+  }
+
+  .title-line {
+    display: block;
+  }
+}
+
 
 
 
