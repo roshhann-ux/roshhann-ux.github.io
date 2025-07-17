@@ -52,15 +52,16 @@
         font-size: 3rem;
     }
 
-    .resume-btn {
-        width: 100%;
+    /* .resume-btn {
+        width: 50%;
         padding: 12px 20px;
 
-    }
+    } */
 
     .buttons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         gap: 10px;
     }
 }
