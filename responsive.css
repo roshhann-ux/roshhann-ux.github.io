@@ -69,7 +69,11 @@
 
 
 
-
+@media (min-width: 769px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 
 /* porject */
