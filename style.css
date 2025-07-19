@@ -561,7 +561,7 @@ header {
     position: relative;
     height: 350px;
     flex: 1;
-    border-radius: 50px;
+    border-radius: 30px;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
     background-size: cover;
@@ -583,7 +583,7 @@ header {
 /* Default enlarged */
 .slide.active {
     flex: 3;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 /* On hover, override all others */
@@ -755,6 +755,30 @@ form textarea::placeholder {
 }
 
 /* whatsapp btn  */
+
+/* call-btn  */
+
+.call-btn {
+  position: fixed;
+  top: 80%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.whatsapp-fixed-btn:hover {
+  background-color: #1ebe5b;
+}
+
+/* call-btn  */
 
 /* footer contact  */
 .contact-section {
