@@ -546,47 +546,6 @@ header {
     padding-bottom: 50px;
 }
 
-#footer .title {
-    margin-top: 35px;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.subhead-cnt {
-    font-size: 30px;
-    color: white;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-}
-
-#footer .nav-bar {
-    background-color: #f5e9dc;
-    width: 215px;
-    padding: 10px 20px;
-    border-radius: 15px;
-}
-
-.menu a {
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    color: #000;
-}
-
-.last {
-    height: 30px;
-
-}
-
-
-
-
 
 .slider {
     display: flex;
@@ -600,7 +559,7 @@ header {
 .slide {
     background-color: black;
     position: relative;
-    height: 450px;
+    height: 350px;
     flex: 1;
     border-radius: 50px;
     overflow: hidden;
@@ -666,7 +625,7 @@ header {
     right: 0;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     opacity: 0;
     transform: translateY(10px);
@@ -688,12 +647,12 @@ header {
 
 .content button {
     background: #ffffffcc;
-    border: none;
+    border:1px solid white;
     border-radius: 10px;
     padding: 8px 16px;
     font-size: 14px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition:0.3s ease;
 }
 
 .content button:hover {
@@ -849,25 +808,31 @@ form textarea::placeholder {
       color: #00e6e6;
     }
 
-    .social-icons {
-      display: flex;
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
 
-    .social-icons a {
-      color: white;
-      background: #222;
-      padding: 0.5rem;
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 35px;
-      height: 35px;
-      text-decoration: none;
-    }
+.social-icons a {
+  color: white;
+  background: #222;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition */
+}
 
+.social-icons a:hover {
+  background: #555;          /* Change background on hover */
+  transform: scale(1.1);     /* Slightly scale up */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
     .contact-form h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
@@ -911,3 +876,90 @@ form textarea::placeholder {
       opacity: 1;
       transform: translateY(0);
     }
+
+
+
+
+
+
+
+#step{
+    margin-top: 100px;
+}
+    .step-card {
+        margin-top: 50px;
+      border-radius: 15px;
+      padding: 7rem 1rem;
+      color: #111;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    .step-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .step-indicator {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      position: relative;
+      bottom: 60px;
+    }
+    #steps{
+        position:absolute;
+        bottom: 300px;
+    }
+
+    .step-indicator::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #ddd;
+      z-index: 1;
+    }
+
+    .step-indicator div {
+      background-color: #ddd;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .step-indicator div.active {
+      background-color: #004d40;
+    }
+
+    .step-title {
+        position: relative;
+        top: 80px;
+      font-size: 30px;
+      margin-bottom: 1rem;
+    }
+    .badge-list{
+        position: relative;
+        top: 80px;
+    }
+
+    .badge-list span {
+      display: inline-block;
+      color: #333;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 20px;
+      margin: 0.2rem;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* Background colors */
+    .bg-step1 { background-color: #82CAC6; }
+    .bg-step2 { background-color: #D4A8B2; }
+    .bg-step3 { background-color: #A0C1DB; }
+    .bg-step4 { background-color: #82CAC6; }
