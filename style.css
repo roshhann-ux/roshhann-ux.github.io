@@ -763,7 +763,7 @@ form textarea::placeholder {
   top: 80%;
   right: 20px;
   transform: translateY(-50%);
-  background-color: #25D366;
+  background-color: #044afa;
   color: white;
   padding: 12px 20px;
   border-radius: 30px;
@@ -781,6 +781,36 @@ form textarea::placeholder {
 /* call-btn  */
 
 /* footer contact  */
+
+
+  .form-control,
+    .form-control:focus {
+        padding: 15px;
+      border-radius: 8px;
+      border: none;
+      box-shadow: none;
+    }
+
+.name-mail{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+    
+    .btn-send {
+      background-color: #0a1c2c;
+      color: white;
+      width: 100%;
+      padding: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      transition: 0.3s ease;
+    }
+    .btn-send:hover {
+      background-color: #1e2e3e;
+    }
+
 .contact-section {
         color: white;
       background: #000;
@@ -797,7 +827,7 @@ form textarea::placeholder {
     .contact-wrapper {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content:center;
     }
 
     .contact-info, .contact-form {
@@ -805,18 +835,18 @@ form textarea::placeholder {
       padding: 1rem;
     }
 
-    .contact-info h1 {
+    #contact h1 {
       font-size: 90px;
       font-weight:bolder;
     }
 
-    .contact-info h1 span {
+    #contact h1 span {
       color: rgb(0, 47, 255);
       font-size: 90px;
       font-weight: bolder;
     }
 
-    .contact-info p {
+    #contact p {
       font-size: 30px;
       margin: 1rem 0;
     }
@@ -831,11 +861,16 @@ form textarea::placeholder {
     .info-item i {
       color: #00e6e6;
     }
+    .contact-nav{
+        display: flex;
+    }
 
 .social-icons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -0.5rem;
+    flex-direction: column;
+    gap: 11px;
 }
 
 .social-icons a {
