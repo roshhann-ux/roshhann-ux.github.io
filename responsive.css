@@ -123,3 +123,10 @@
         justify-content: center;
     }
 }
+
+
+@media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
