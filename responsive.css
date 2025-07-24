@@ -70,9 +70,9 @@
 
 
 @media (min-width: 769px) {
-  .menu-button {
-    display: none;
-  }
+    .menu-button {
+        display: none;
+    }
 }
 
 
@@ -122,11 +122,16 @@
         align-items: center;
         justify-content: center;
     }
+
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
 }
 
 
 @media (max-width: 768px) {
-      .contact-wrapper {
+    .contact-wrapper {
         flex-direction: column;
-      }
     }
+}
