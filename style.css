@@ -248,7 +248,7 @@ header {
 
 /* === Menu Button === */
 .menu-button {
-    position:absolute;
+    position:fixed;
     top: 20px;
     right: 100px;
     display: flex;
@@ -295,7 +295,7 @@ header {
     text-align: center;
     width: 108px;
     right: 0;
-    position: absolute;
+    position:fixed;
 }
 
 /* Menu Items */
