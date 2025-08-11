@@ -1,89 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Form</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Hero Section</title>
   <style>
-    body {
-      background-color: #4cff84;
-      font-family: 'Poppins', sans-serif;
-      color: #0a1c2c;
-    }
-    .form-control,
-    .form-control:focus {
-        padding: 15px;
-      border-radius: 8px;
-      border: none;
-      box-shadow: none;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-.name-mail{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-    
-    .btn-send {
-      background-color: #0a1c2c;
-      color: white;
-      width: 100%;
-      padding: 14px;
-      font-weight: 600;
-      border-radius: 8px;
-      border: none;
-      transition: 0.3s ease;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
     }
-    .btn-send:hover {
-      background-color: #1e2e3e;
+
+    .hero-content {
+      max-width: 800px;
     }
-    .social-section {
-      margin-top: 3rem;
-    }
-    .social-links a {
+
+    .badge {
       display: inline-block;
-      margin-right: 2rem;
-      font-weight: 500;
-      color: #0a1c2c;
-      border-bottom: 2px solid currentColor;
-      text-decoration: none;
+      background-color: #1b1b1b;
+      color: #fff;
+      padding: 15px 21px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      position: relative;
     }
-    .social-links a:hover {
-      color: #000;
+
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
     }
   </style>
 </head>
+
 <body>
-
-<div class="container py-5">
-  <div class="row g-3">
-    <div class="col-md-6">
-        <div class="name-mail">
-            
-      <input type="text" class="form-control" placeholder="Name">
-       <input type="email" class="form-control" placeholder="E-mail">
-        </div>
-    </div>
-
-    <div class="col-md-6">
-      <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-    </div>
- 
-    <div class="col-12">
-      <button class="btn-send">Send message</button>
-    </div>
+  <div class="hero-content">
+    <div class="badge">Available For Work</div>
+    <h3 class="badge-sub">
+      Curious about what we can create together?<br>
+      Let’s bring something extraordinary to life!
+    </h3>
   </div>
-
-  <div class="social-section">
-    <h4 class="fw-bold mb-3">Our social media</h4>
-    <div class="social-links">
-      <a href="#">Linkedin</a>
-      <a href="mailto:hello@reter.com">hello@reter.com</a>
-      <a href="#">Schedule a call</a>
-    </div>
-  </div>
-</div>
-
 </body>
+
 </html>

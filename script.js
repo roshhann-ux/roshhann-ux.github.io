@@ -1,13 +1,4 @@
-const title = document.getElementById("animated-title");
-const text = title.textContent;
-title.textContent = "";
 
-[...text].forEach((char, i) => {
-  const span = document.createElement("span");
-  span.textContent = char;
-  span.style.animationDelay = `${i * 0.2}s`; // Delay between letters
-  title.appendChild(span);
-});
 
 // const hero = document.getElementById('hero');
 // const heroContent = document.getElementById('heroContent');
@@ -142,3 +133,77 @@ title.textContent = "";
   });
 
   window.addEventListener('load', handleScrollAnimation);
+
+
+
+
+
+
+
+   const title = document.getElementById("animated-title");
+
+    const staticText = "Ui/Ux ";
+    const firstWord = "Designer";
+    const secondWord = "Developer";
+    const typingSpeed = 200;
+    const erasingSpeed = 150;
+    const delayBetween = 1050;
+
+    const fullText = staticText + firstWord;
+
+    // Step 1: Animate full "Ui/Ux Designer" using riseUp only once
+    fullText.split("").forEach((char, i) => {
+      const span = document.createElement("span");
+      span.textContent = char;
+      span.classList.add("rise"); // Apply rise only here
+      span.style.animationDelay = `${i * 0.2}s`;
+      title.appendChild(span);
+    });
+
+    // Step 2: After riseUp ends, start typewriter effect (without riseUp)
+    setTimeout(() => {
+      const spans = title.querySelectorAll("span");
+      const staticSpans = [...spans].slice(0, staticText.length);
+
+      const dynamic = document.createElement("span");
+      dynamic.classList.add("dynamic-text");
+
+      title.innerHTML = ""; // Clear all
+      staticSpans.forEach(s => {
+        s.style.animation = "none"; // Clear any leftover animation
+        s.style.opacity = "1";
+        s.style.transform = "none";
+        title.appendChild(s);
+      });
+
+      title.appendChild(dynamic);
+
+      const words = [firstWord, secondWord];
+      let wordIndex = 1; // Start with second word
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeLoop() {
+        const word = words[wordIndex];
+        if (isDeleting) {
+          dynamic.textContent = word.substring(0, charIndex--);
+          if (charIndex < 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            setTimeout(typeLoop, typingSpeed);
+          } else {
+            setTimeout(typeLoop, erasingSpeed);
+          }
+        } else {
+          dynamic.textContent = word.substring(0, charIndex++);
+          if (charIndex > word.length) {
+            isDeleting = true;
+            setTimeout(typeLoop, delayBetween);
+          } else {
+            setTimeout(typeLoop, typingSpeed);
+          }
+        }
+      }
+
+      typeLoop();
+    }, (fullText.length * 200) + 600); // Wait for riseUp to finish
