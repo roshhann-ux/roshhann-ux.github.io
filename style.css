@@ -595,6 +595,16 @@ header {
     cursor: pointer;
 }
 
+.slide-img-1{
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+.slide-img-2{
+    height: -webkit-fill-available;
+}.slide-img-3{
+    height: -webkit-fill-available;
+}
+
 .text-in {
     opacity: 0;
 }
