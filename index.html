@@ -49,7 +49,8 @@
                             <p class="name">Afthab Roshan</p>
 
                             <div class="buttons">
-                                <button class="resume-btn" onclick="window.open('files/UX Afthab Roshan.pdf', '_blank')">Resume
+                                <button class="resume-btn"
+                                    onclick="window.open('files/UX Afthab Roshan.pdf', '_blank')">Resume
                                     <span class="arrow">→</span>
                                 </button>
                                 <a href="#contact"><button class="resume-btn">Hire Me
@@ -128,48 +129,51 @@
     <section id="project">
         <div class="container">
             <h1 class="title" data-aos="fade-right">
-                Projects <span class="dot">.</span></h1>
+                Projects <span class="dot">.</span>
+            </h1>
             <p class="subhead" data-aos="fade-left">
                 Transforming Ideas into Interactive Journeys
             </p>
+
             <div class="slider">
                 <div class="slide active">
-                     <img src="img/Desktop - 6.png" alt="" class="slide-img-1">
+                    <img src="img/Desktop - 6.png" alt="" class="slide-img-1">
                     <div class="content">
-                        <button onclick="window.open('files/Work 1.png', '_blank')">
-                            Explore
-                        </button>
+                        <button onclick="openPopup('files/Work 1.png')">Explore</button>
                     </div>
                 </div>
-
 
                 <div class="slide">
-                    <img src="img/Desktop - 7.png" alt=""class="slide-img-2">
+                    <img src="img/Desktop - 7.png" alt="" class="slide-img-2">
                     <div class="content">
-                        <button onclick="window.open('files/Work 2.png', '_blank')">Explore</button>
+                        <button onclick="openPopup('files/Work 2.png')">Explore</button>
                     </div>
                 </div>
-
 
                 <div class="slide">
-                    <img src="img/Hand and iPhone 16 Pro.png" alt=""class="slide-img-3">
+                    <img src="img/Hand and iPhone 16 Pro.png" alt="" class="slide-img-3">
                     <div class="content">
-                        <button onclick="window.open('files/Work 3.png', '_blank')">Explore</button>
+                        <button onclick="openPopup('files/Work 3.png')">Explore</button>
                     </div>
                 </div>
-
 
                 <div class="slide content-slide">
-                    <img src="img/Free iPhone Air.png" alt=""class="slide-img-3">
+                    <img src="img/Free iPhone Air.png" alt="" class="slide-img-3">
                     <div class="content">
-
-                        <button onclick="window.open('files/section 1.png', '_blank')">Explore</button>
+                        <button onclick="openPopup('files/section 1.png')">Explore</button>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Shared Popup Container -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <img id="popup-image" src="" alt="Work Preview">
+        </div>
+    </div>
 
     <section id="step">
         <div class="container">

@@ -207,3 +207,22 @@
 
       typeLoop();
     }, (fullText.length * 200) + 600); // Wait for riseUp to finish
+
+
+
+    function openPopup(imageSrc) {
+  document.getElementById('popup-image').src = imageSrc;
+  document.getElementById('popup-overlay').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popup-overlay').style.display = 'none';
+}
+
+// Optional: close popup when clicking outside
+window.onclick = function(event) {
+  const popup = document.getElementById('popup-overlay');
+  if (event.target === popup) {
+    popup.style.display = 'none';
+  }
+}
